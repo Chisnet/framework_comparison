@@ -1,4 +1,6 @@
-## Comparison of popular web frameworks ability to delivery 1 line of centered text
+# Framework Comparison
+
+### A comparison of popular web frameworks ability to delivery 1 line of centered text
 
 Requirements:
 
@@ -97,4 +99,6 @@ Additional Notes:
 
 # NextJS (React)
 
+Steps:
 
+TODO
