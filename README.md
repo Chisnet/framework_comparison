@@ -14,13 +14,28 @@ Assessment Criteria:
 - Total page weight of the one page
 - Lighthouse Score for performance
 
+Commands Used:
+
+- Count prod packages
+    - npm ls --parseable --prod | wc -l
+- Count dev packages
+    - npm ls --parseable --dev | wc -l
+
 # Sapper (Svelte)
 
 Steps:
 
 - One line setup command
-- - npx degit "sveltejs/sapper-template#webpack"
-- 
+    - npx degit "sveltejs/sapper-template#webpack"
+- Strip out extra pages/files
+- Edit the template.html
+- Edit the index page
+- Edit global.css
+- Edit the manifest
+- Add icons
+- Done!
+
+
 
 - Minimal config needed (SEO, GZip included)
 - Simple static file handling

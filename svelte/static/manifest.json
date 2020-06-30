@@ -1,8 +1,9 @@
 {
 	"background_color": "#ffffff",
-	"theme_color": "#333333",
-	"name": "TODO",
-	"short_name": "TODO",
+	"theme_color": "#005b96",
+	"name": "Chris Graham",
+	"short_name": "cgraham",
+	"lang": "en-GB",
 	"display": "minimal-ui",
 	"start_url": "/",
 	"icons": [
