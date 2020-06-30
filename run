@@ -1,0 +1,24 @@
+#!/bin/bash 
+
+function svelte() {
+    eval cd svelte
+    eval npm install
+    eval npm run build
+    eval node __sapper__/build
+}
+
+function gatsby() {
+    eval cd gatsby
+    eval npm install
+    eval npm run build
+    eval npm run serve
+}
+
+# ----------------- Main -----------------
+if [ "$(type -t $1)" == 'function' ]; then
+    func=$1
+    shift
+    $func "$@"
+else
+    echo "Unrecognised framework"
+fi
