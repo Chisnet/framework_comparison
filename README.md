@@ -14,7 +14,7 @@ Assessment Criteria:
 - Amount of setup needed (Steps)
 - Number of node packages needed
 - Total page weight of the one page
-- Lighthouse Score for performance and best practices
+- Lighthouse Score for performance
 
 Commands Used:
 
@@ -49,12 +49,12 @@ Page Weight:
 
 Lighthouse:
 
-- 100 for performance
-- 93 for best practices (Only because not H2)
+- 100
 
 Additional Notes:
 
 - PWA by default (although not sure what it's doing)
+- SSR out of the box
 
 # Gatsby (React)
 
@@ -67,6 +67,7 @@ Steps:
 - Add a layout
 - Edit the index page
 - Add global.css
+- Add manifest
 - Add icons
 - Add Helmet to enable SEO (following recommendation)
     - npm install --save gatsby-plugin-react-helmet react-helmet
@@ -85,8 +86,7 @@ Page Weight:
 
 Lighthouse:
 
-- 100 for performance
-- 93 for best practices (Only because not H2)
+- 100
 
 Additional Notes:
 
@@ -96,9 +96,38 @@ Additional Notes:
 - Production SEO config would probably also be more complex
 - A heavier weight initial template (gatsby-site) is available by default which might save some time, but adds a lot of extra stuff
 - Manifest building plugin recommended (auto-generates icons)
+- SSR out of the box
 
 # NextJS (React)
 
 Steps:
 
-TODO
+- One line setup command
+    - npx create-next-app
+    - Choose "Default starter app"
+- Remove tiny bit of extra API that's not needed (Super easy)
+- Edit the index page
+- Add _app.js (to allow global CSS)
+- Add _document.js to allow editing base HTML template
+- Add global.css
+- Add icons
+- Add manifest
+
+Packages:
+
+- 834 production
+- 1 additional development
+
+Page Weight:
+
+- 65.3kb transferred
+- 189kb total
+
+Lighthouse:
+
+- 99
+
+Additional Notes:
+
+- TypeScript support out of the box
+- SSR out of the box

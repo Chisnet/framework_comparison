@@ -14,6 +14,13 @@ function gatsby() {
     eval npm run serve
 }
 
+function nextjs() {
+    eval cd nextjs
+    eval npm install
+    eval npm run build
+    eval npm start
+}
+
 # ----------------- Main -----------------
 if [ "$(type -t $1)" == 'function' ]; then
     func=$1
